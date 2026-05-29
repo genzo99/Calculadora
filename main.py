@@ -22,12 +22,15 @@ def calculadora(num1: float, num2: float, operador: str) -> float:
 
 
 if __name__ == "__main__":
-
     while True:
         os.system('cls' if os.name == 'nt' else 'clear')
+
         try:
             print('Calculadora')
             print('----------------------------------\n')
+
+            num1 = float(input("Introduza o primeiro número: "))
+            num2 = float(input("Introduza o segundo número: "))
 
 
         except ValueError:
